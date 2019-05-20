@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.test {
+    fill: none;
+    stroke: red;
+    stroke-width:10px;
+}
+.cross-back {
+    fill: none;
+    stroke: rgb(255, 63, 92);
+    stroke-width:4px;
+    opacity: 0.9;
+    stroke-linejoin: round;
+    filter: url('#glow');
+}
+.cross-front {
+    fill: none;
+    stroke: rgb(255, 245, 37);
+    stroke-width:3px;
+    opacity: 0.9;
+    stroke-linejoin: round;
+    filter: url('#glow-large');
+}
+.glow-board {
+    fill: none;
+    stroke: rgb(255, 245, 37);
+    /* stroke: radial-gradient(red, yellow, green); */
+    stroke-width:2px;
+    opacity: 0.9;
+    stroke-linejoin: round;
+    filter: url('#glow-large');
+}
+.welcome-back-outter {
+    fill: none;
+    stroke: rgb(239, 240, 250);
+}
+.welcome-back {
+    fill: #222;
+    stroke: rgb(255, 255, 255);
+    stroke-width:3px;
+    opacity: 1;
+    filter: url('#glow-small');
+}
+.light-bulb {
+    fill: #eedd11;
+    stroke: #ccaa09;
+    stroke-width:1px;
+    transition: 40ms;
+    transition-timing-function: ease-in-out;
+}
+.welcome-text {
+    fill:#ff9900;
+    font-family: 'Arial';
+    font-size: 40px;
+    text-shadow: 
+        0 0 5px #ff0000,
+        0 0 10px #e04700,
+        0 0 20px #ff5100,
+        0 0 40px #ff5100,
+        0 0 80px #ff5100,
+        0 0 150px #ff5100;
+}
+
+#main-title {
+
+    font-family: 'Pacifico', cursive;
+    fill:#0555cc;
+    font-size: 70px;
+    font: bold;
+    text-shadow: 
+        0 0 5px #858df7,
+        0 0 10px #7bacff,
+        0 0 20px #7bacff,
+        0 0 40px #7bacff,
+        0 0 80px #7bacff,
+        0 0 150px #4981e0;
+    transition: 300ms;
+}
+
+#up-title {
+    font-family: 'Permanent Marker', cursive;
+    fill:#054bcc;
+    font-size: 30px;
+    text-shadow: 
+        0 0 5px #85aff7,
+        0 0 10px #7bacff,
+        0 0 20px #7bacff,
+        0 0 90px #7bacff;
+    transition: 200ms;
+}
+
+#up-title-to {
+    font-family: 'Arial';
+    fill: #054bcc;
+    font-size: 30px;
+    text-shadow:
+        0 0 5px #85aff7,
+        0 0 10px #7bacff,
+        0 0 20px #7bacff,
+        0 0 90px #7bacff;
+    transition: 200ms;
+}
+
+#title:hover {
+    text-decoration: none;
+}

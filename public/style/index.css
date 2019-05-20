@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    align-content: center;
+    transition: 500ms;
+    background: #333335;
+}
+
+body div {
+    height: 100%;
+    width: 100%;
+    align-content: center;
+}
+
+svg {
+    display: block;
+    align-content: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+}
+

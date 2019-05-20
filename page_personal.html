@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ECE Club Dinner Dance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   
+    <!-- <script src="./main.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/style/page_eventinfo.css" />
+    <link rel="stylesheet" href="./public/style/main-svg.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+</head>
+<script>
+    function goPAGE() {
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+                var div_1 = document.getElementsByClassName("blue");
+                div_1.setAttribute("class", "intialism");
+                document.getElementsByClassName("tickets_info").setAttribute("style", "font: 8px;");
+            }
+        }
+        goPAGE();
+</script>
+<script>
+    var tmp = '<?=$data?>';
+    tmp = eval('('+tmp+')')
+    alert(tmp.length)
+</script>
+<body>
+    <?php 
+        $TITLE = "personalize";
+        include "./public/sub/header.php";
+    ?>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <svg class='ece-svg' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 640 640">
+                    <style>
+                    </style>
+                    <path class='normal-ece-svg' d="M318.35 258.65L318.35 223.9L352.79 213.41L284.04 195.16L349.29 174.16L285.04 156.16L352.79 136.16L284.04 115.91L317.04 105.66L317.04 45.66" />
+                    <path class='normal-ece-svg' d="M318.41 472.09L318.41 376.59"/>
+                    <path class='normal-ece-svg' d="M425.18 472.09L211.68 472.09" />
+                    <path class='normal-ece-svg' d="M377.18 518.21L257.68 518.21" />
+                    <path class='normal-ece-svg' d="M337.18 558.21L300.18 558.21" />
+                    <path class='bold-ece-svg' d="M242.68 258.77L224.16 258.77L119.68 260.21L119.68 367.71L242.68 367.71" />
+                    <path class='bold-ece-svg' d="M242.68 313.24L130.18 313.24" />
+                    <path class='bold-ece-svg' d="M383.68 367.71L261.68 367.71L261.68 258.77L383.68 258.77" />
+                    <path class='bold-ece-svg' d="M524.68 367.71L403.18 367.71L403.18 258.65L524.68 258.77" />
+                    <path class='bold-ece-svg' d="M524.68 313.24L409.68 313.24" />
+                    <path class='thin-ece-svg' d="M620.01 313.24L320 603.84L18.05 313.24L318.41 22.28L620.01 313.24Z" />
+                </svg>
+                <span class="sr-only">(current)</span>
+            </a>
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page_eventinfo.html">EVENT INFO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page_menu.html">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./page_personal_specialization.html">PERSONAL SPECIFIALIZATION</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page_login.html">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
+    <br>
+    <section class="jumbotron text-center row" id="header">
+        <h1 class="neon pink col-12">DINNER DANCE 2019</h1>
+    </section>
+    <div class="container" id='main'>
+        <div class="main-back ">
+                <div class="row row-centered" style="word-wrap: break-all">
+                    <form name="loginForm" class="form-style" role="form" action="login.php" method="post">
+                            <!-- <div class="form-group"> -->
+                                <div class="row space">
+                                <div class="col-6 col-char">
+                                <label for="dietry"><span class="neon blue">Dietry: </span> </label>
+                                </div>
+                                <div class="col-6">
+                                   <span class="block input-icon input-icon-right">
+                                        <select>
+                                            <option value="normal">Normal</option>
+                                            <option value="vegie">Vegetarian</option>
+                                        </select>
+                                        <i class="ace-icon fa fa-user"></i>
+                                    </span>
+                                </div>
+                                </div>
+                            <!-- </div>
+                            <div class="form-group"> -->
+                                <div class="row space">
+                                <div class="col-6" style="text-align: center">
+                                <label for="table"><span class="neon blue">Table Selection:</span></label>
+                                </div>
+                                <div class="col-6">
+                                   <span class="block input-icon input-icon-right">
+                                        <input type="text" class="form-control" placeholder="tableNum" name="table" required/>
+                                        <i class="ace-icon fa fa-lock"></i>
+                                    </span>
+                                </div>
+                                </div>
+                            <!-- </div> -->
+                            <div class="row space">
+                                    <div class="col-4">
+                                    <label class="control-label no-padding-right"> </label>
+                                    </div>
+                                    <div class="col-4">
+                                        <button type="submit" name="login" class="width-50 pull-right btn btn-sm btn-primary" ng-click="doLogin(login)" data-ng-disabled="loginForm.$invalid">
+                                        <i class="ace-icon fa fa-key"></i>
+                                            submit
+                                        </button>
+                                    </div>
+                                    <div class="col-4">
+                                            <label class="control-label no-padding-right"> </label>
+                                            </div>
+                            </div>
+                        </form>               
+                    </div>  
+        </div>
+    </div>
+
+    <div class="fixed-bottom">
+        <div id='vegas-svg'class="container">
+            <svg  viewBox="60 150 520 300" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color: rgb(230,0,0); stop-opacity: 0.6" />
+                        <stop offset="75%" style="stop-color: rgb(180,180,180); stop-opacity: 1" />
+                        <stop offset="95%" style="stop-color: rgb(200,200,200); stop-opacity: 1" />
+                        <stop offset="100%" style="stop-color: rgb(250,250,250); stop-opacity: 1" />
+                    </radialGradient>
+                    <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="0%" style="stop-color: rgb(4, 0, 230); stop-opacity: 0.6" />
+                        <stop offset="75%" style="stop-color: rgb(180,180,180); stop-opacity: 1" />
+                        <stop offset="95%" style="stop-color: rgb(200,200,200); stop-opacity: 1" />
+                        <stop offset="100%" style="stop-color: rgb(250,250,250); stop-opacity: 1" />
+                    </radialGradient>
+                    <filter id='glow'>
+                        <fegaussianblur class='blur' result='coloredBlur' stddeviation='3'></fegaussianblur>
+                        <femerge>
+                            <femergenode in='coloredBlur'></femergenode>
+                            <femergenode in='coloredBlur'></femergenode>
+                            <femergenode in='coloredBlur'></femergenode>
+                            <femergenode in='SourceGraphic'></femergenode>
+                        </femerge>
+                    </filter>
+                </defs>
+
+                <path class='vegas-line' d="M108.45 416.1C102.17 416.1 89.62 416.1 70.8 416.1L70.8 314.15L73.14 314.15L73.14 312.31L89.17 312.24L89.17 314.86L91.51 314.86L91.51 331.61L120.27 331.61L120.27 297.79L136.22 297.79L136.22 291.18L144.46 290.9L144.46 284.08L165.13 284.08L165.68 241.37L191.08 241.37L191.08 255.73L197.82 255.73L197.82 342.13L204.26 342.13L204.26 292.27C210.71 295.11 222.03 296.45 238.25 296.28C254.46 296.11 267.9 294.77 278.55 292.27L278.55 347.59L278.55 343.42L296.48 338.42C298.82 327.54 302.95 320.7 308.87 317.87C317.76 313.63 321.96 312.66 336.56 315.71C351.17 318.76 353.17 332.06 353.17 331.61C353.17 331.21 348.53 320.45 342.16 316.71C341.41 316.27 340.64 315.93 339.85 315.71C332.33 313.63 322.63 311.99 312.26 315.71C305.35 318.19 299.88 325.64 295.87 338.08L279.04 342.76C293.59 318.65 300.94 306.24 301.08 305.54C301.22 304.84 301.06 303.73 300.6 302.23L301.08 297.13L304.5 297.13L316.72 297.13L334.61 296.72L329.85 274.98L321.32 274.65L316.72 296.47L305.07 296.72C307.48 291.03 309.01 287.45 309.67 285.97C310.32 284.49 311.88 278.9 314.34 269.18L310.9 268.76C310.9 266.67 311.23 265.24 311.88 264.45C312.54 263.67 313.85 263.15 315.82 262.89C315.88 262.31 316.18 261.09 316.72 259.23C317.54 256.44 320.5 219.44 320.89 214.11C321.29 208.78 321.75 178.53 321.7 178.07C321.65 177.62 321.09 177.85 320.89 177.72C320.76 177.64 320.68 177.34 320.66 176.83C320.65 173.53 320.65 171.68 320.66 171.29C320.69 170.71 322.76 170.13 323.37 169.9C323.98 169.67 324.23 168.89 324.66 168.25C324.95 167.83 325.45 164.33 326.16 157.75C326.61 163.52 327 167.05 327.32 168.32C327.63 169.6 328.69 170.78 330.47 171.86C330.6 175.24 330.5 177.29 330.19 177.99C329.71 179.04 330.76 208.51 331.14 219.81C331.4 227.33 332.87 241.62 335.54 262.68L339.85 265.46L340.14 269.18L337.55 269.18C337.81 270.59 338.1 272.34 338.42 274.43C338.73 276.52 341.4 284.09 346.42 297.13L351.52 297.13C351.55 298.07 351.55 298.89 351.52 299.59C351.48 300.64 351.39 301.96 351.11 302.69C350.84 303.42 350.2 303.33 350.16 304.17C350.13 304.73 350.23 305.52 350.45 306.52L374.1 345.84L374.77 345.6L367.6 334.18C374.54 334.14 378.51 334.14 379.51 334.18C381.01 334.22 382.97 333.49 384.02 332.54C385.07 331.58 385.02 328.85 385.11 327.34C385.2 325.84 386.11 323.06 386.21 322.06C386.3 321.05 385.52 318.5 384.75 318.14C383.97 317.77 383.72 316.19 383.64 315.71C383.56 315.23 383.59 311.91 382.91 311.79C382.22 311.66 382.45 307.56 382.43 307.04C382.4 306.53 382.48 304.65 381.91 304.57C381.34 304.5 381.11 303.36 381.03 303.06C380.96 302.76 381.01 299.64 381.21 297.79C381.41 295.94 381.06 294.14 380.88 293.71C380.7 293.28 380.4 293.39 380.35 291.18C380.3 288.98 380.88 288.83 381.21 288.27C381.54 287.72 382.1 287.54 382.32 287.11C382.55 286.68 382.45 284.02 382.43 283.56C382.4 283.11 382.4 281.16 381.77 281.03C381.13 280.91 381.08 280.33 381.03 279.79C380.98 279.26 380.91 278.3 379.95 277.92C378.98 277.54 378.5 276.66 378.45 276.3C378.4 275.95 378.17 275.04 378.86 274.43C379.54 273.82 379.79 272.05 379.84 271.54C379.89 271.04 379.49 268.99 379.01 268.76C378.53 268.53 378.33 267.92 378.38 267.29C378.43 266.66 377.82 265.97 377.03 265.04C376.25 264.1 376.6 261.72 376.55 260.53C376.5 259.34 374.43 259.01 374.1 258.36C373.77 257.7 374.07 255.7 373.97 254.96C373.87 254.23 372.86 252.64 372.83 251.22C372.81 249.8 371.31 249.47 371.26 248.21C371.21 246.94 372.83 246.61 373.09 246.21C373.34 245.8 372.83 243.75 373.24 243.02C373.64 242.28 374.66 241.45 375.77 241.37C376.88 241.3 377.46 241.58 378.2 242.36C378.93 243.14 378.35 243.32 378.38 243.85C378.4 244.38 377.29 244.44 377.03 245.63C376.78 246.81 378.22 247.19 378.53 247.62C378.83 248.05 378.19 249.09 377.65 250.36C377.12 251.64 377.18 252.12 377.39 252.91C377.6 253.71 379.25 254.4 379.3 255.73C379.36 257.06 379.57 260.04 380.47 260.78C381.38 261.53 381.85 263.49 383.34 266.58C384.83 269.67 385.95 270.09 387.54 272.05C389.14 274.02 386.85 269.61 386.53 268.63C386.32 267.98 386.44 266.92 386.9 265.46L381.91 262.01L387.28 264.45L388.65 263.57L387.28 260.1L389.71 263.72L390.59 263.57L392.44 263.34L393.81 260.38L393.33 263.57L394.19 264.05L395.88 263.72C398.43 263.06 399.52 262.78 399.15 262.89C398.78 262.99 397.81 263.75 396.24 265.19L396.64 266.58L400.92 266.58C398.36 266.84 397.04 267.52 396.94 268.63C396.8 270.29 396.8 271.74 397.16 273.76C397.52 275.79 397.81 275.5 400.27 276.73C401.9 277.55 403.33 279.5 404.53 282.58C404.82 284.13 405.33 284.8 406.05 284.61C407.14 284.32 406.48 281.93 407.57 281.64C408.65 281.35 409.45 282.22 409.59 284.83C409.74 287.43 407.86 285.33 408.15 287.57C408.44 289.81 410.61 289.96 410.97 291.98C411.21 293.33 410.68 295.45 409.38 298.35C408.12 300.23 406.9 301.15 405.72 301.11C403.94 301.05 405.32 310.06 405.57 311.02C405.73 311.66 405.78 315.28 405.72 321.88C405.37 324.84 405.63 327.72 406.48 330.52C407.33 333.33 409.08 335.07 411.73 335.76L426.16 335.76L426.16 310.51L424.66 310.02L422.16 311.97L421.05 313.15L419.53 313.79L419.65 313.15L421.55 311.56L423.96 309.84L423.5 309.08L421.55 308.93L418.49 308.93L416.89 309.28L415.15 309.97L413.38 311.42L411.91 312.24L412.64 311.16L413.38 310.27L414.95 309.21L416.89 308.4L419.43 308.07L421.96 308.07L423.83 308.4L424.77 307.59L424.87 306.8L422.87 305.23L419.93 304.25L416.49 304.17L413.63 303.85L415.45 303.51L419.83 303.51L422.87 304.25L424.03 305.4L425.45 306.19L426.44 305.4L426.92 301.77L427.58 300.5L428.31 301.11L428.31 304.98L428.71 305.77L429.95 304.85L432.54 303.33L435.5 302.8L438.41 303.06L440.74 304.02L441.14 305.54L439.55 304.17L436.46 303.51L433.62 303.74L432.54 304.17L430.69 305.23L429.14 306.52L429.85 308.19L433.62 308.5L437.09 309.41L441.07 312.55L440.33 313.01L436.91 310.12L433.9 309.08L429.85 309.08L429.14 309.59L433.42 313.43L433.07 313.99L428.71 309.97L426.71 310.51L426.92 335.76L441.89 335.87L441.89 279.32L451.83 279.42L451.68 267.35L452.3 267.35L452.3 279.42L462.73 279.42L462.73 334.88L458.82 334.88L458.64 335.87L492.32 335.87L492.32 334.88L472.72 334.88L472.72 266.58L493.83 266.58L493.83 322.49L500.44 322.49L500.44 305.86L502.81 305.86L502.81 303.85L518.8 303.85L518.8 306.27L521.03 306.27L521.03 327.91L525.13 327.91L525.13 284.08L546.22 284.08L546.22 333.69L555.06 333.69L555.06 313.01L554.52 312.6L554.11 311.87L553.38 311.64L552.74 312.31L552.24 312.87L550.78 313.88L551.55 312.87L552.06 311.64L552.06 310.73L551.28 310.51L549.55 310.51L547.86 310.96L546.63 311.64L544.99 311.87L545.68 311.23L547.04 310.37L548.18 309.41L549.78 309.14L551.1 309.28L552.6 309.78L552.74 308.87L552.6 307.82L551.28 306.91L549.96 306.27L548.64 306.27L547.23 306.27L545.68 305.77L547.45 305.18L549.37 305.04L550.78 305.18L552.24 306.13L553.19 306.91L554.52 306.72L555.29 306.45L555.92 303.85L556.38 306.72L556.98 306.91L557.8 307.04L558.52 306.45L560.53 305.4L562.94 305.4L564.17 305.4L565.27 306.45L563.95 306.13L561.71 306.13L559.89 306.45L558.71 307.04L558.52 308L559.25 309.28L560.26 309.59L561.71 309.59L563.58 309.59L564.54 310.37L565.4 311.23L565.86 312.87L564.17 311.42L562.08 310.37L559.89 310.37L558.52 310.73L559.89 311.87L560.53 314.15L559.25 312.46L557.52 311.23L555.92 312.31L555.92 333.69L566.48 333.69L566.48 353.86" />
+                <path class="vegas-text" d="M176.23 416.86L146.39 362.36L117.74 416.86" />
+                <path class="vegas-text" d="M166.63 399.28L127.34 399.28" />
+                <path class="vegas-text" d="M227.78 367.08C220.5 362.85 214.19 360.83 208.88 361.03C200.9 361.32 188.49 366.35 189.97 375.5C191.45 384.66 196.91 386.58 213.45 390.13C230 393.67 231.47 400.02 230.88 406.37C230.29 412.73 220.1 416.71 209.47 416.86C202.38 416.96 194.94 414.5 187.16 409.48" />
+                <path class="vegas-text" d="M321.02 362.36L293.8 416.86L266.59 362.36" />
+                <path class="vegas-text" d="M376.08 416.86L334.73 416.1L334.73 362.36L376.08 362.36" />
+                <path class="vegas-text" d="M371.86 388.94L334.73 388.94" />
+                <path class="vegas-text" d="M417.32 390.37L439.49 390.37L439.49 409.67C431.41 414.77 423.7 417.33 416.36 417.33C405.36 417.33 387.49 411.9 387.01 390.37C386.54 368.84 405.36 361.03 417.32 360.87C425.29 360.76 431.88 363.15 437.09 368.04" />
+                <path class="vegas-text" d="M512.37 416.1L483.83 362.36L455.12 416.1" />
+                <path class="vegas-text" d="M503.76 399.14L464.05 399.14" />
+                <path class="vegas-text" d="M524.81 409.19C538.69 417.8 543.63 417.01 548.74 417.33C553.84 417.65 567.72 416.37 567.88 403.61C568.04 390.85 554 390.21 548.74 389.61C543.47 389.01 527.68 385.43 526.73 375.86C525.77 366.29 537.89 361.35 546.66 361.19C552.51 361.08 558.73 363.05 565.32 367.09" />
+                <path class="vegas-text" d="M567.88 434.84L69.9 434.84" />
+            </svg>
+        </div>
+    <footer class="fixed-bottom">
+        @ECE Club 2019
+    </footer>
+    
+</body>
+</html>

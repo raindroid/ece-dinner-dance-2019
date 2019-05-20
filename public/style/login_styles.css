@@ -1,0 +1,231 @@
+@import url(http://fonts.useso.com/css?family=Source+Sans+Pro:200,300);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+body ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+body :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  font-weight: 300;
+} 
+.wrapper {
+  background: #50a3a200;
+  /* border: #50a3a2aa solid 2px; */
+  opacity: 0.8;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  /* margin-top: -200px; */
+  overflow: hidden;
+
+}
+.wrapper.form-success .container h1 {
+  -webkit-transform: translateY(85px);
+      -ms-transform: translateY(85px);
+          transform: translateY(85px);
+} 
+.container h1 {
+  font-size: 40px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-put;
+          transition-timing-function: ease-in-put;
+  font-weight: 200;
+}
+form .input {
+  margin: 0 auto;
+  text-align: center;
+}
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+form .in-form {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+form input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 65%;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+}
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input:focus {
+  background-color: white;
+  width: 75%;
+  color: #53e3a6;
+}
+form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  color: #53e3a6;
+  border-radius: 3px;
+  text-align: center;
+  width: 250px;
+  display: block;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+form .btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  border-radius: 3px;
+  text-align: center;
+  width: 40%;
+  display: block;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transition: 0.6s;
+}
+form .btn:hover {
+  /* background-color: white; */
+  width: 55%;
+  /* color: #53e3a6; */
+}
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  display: block;
+  background-image: url('../../dices_and_cards.jpg');
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  filter: blur(5px) brightness(0.8);
+
+  animation-name: background-anim;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+  background-image: black;
+}
+.content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+@keyframes background-anim {
+  0% {
+    opacity: 0.3;
+    filter: blur(0) brightness(0);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(5px) brightness(0.8);
+  }
+}
+
+#forgot {
+  line-break: 0;
+  line-height: 1rem;
+}
+
+#register-button {
+  z-index: 9999;
+}
+
+.alert {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  /* height: 40px; */
+  line-height: 1rem;
+  font-size: 0.9rem;
+  transition: 500ms;
+}
+
+.inv {
+  opacity: 0.0;
+  /* height: 10%; */
+}
+#card-badge {
+  width: 30%;
+  height: 100%;
+  padding: 1.5vh;
+}
+#card-label {
+  height: 100%;
+  padding: 1.5vh;
+}

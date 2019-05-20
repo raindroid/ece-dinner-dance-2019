@@ -1,0 +1,5 @@
+/vendor/
+/secret/
+form.sql
+*.sql
+/sql/

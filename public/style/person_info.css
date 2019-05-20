@@ -1,0 +1,321 @@
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    bottom: 0;
+    top: 0;
+  
+    /* display: block; */
+    background-image: url('../../dices_and_cards.jpg');
+    width: 100%;
+    height: 100%;
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    opacity: 1;
+    filter: blur(5px) brightness(0.8);
+  
+    /* animation-name: background-anim;
+    animation-duration: 1s;
+    animation-iteration-count: 1; */
+}
+body { 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    /* background: white; */
+    /* background-image: black; */
+}
+.content {
+    /* position: fixed; */
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+#test-body {
+    
+    height: calc(100vh - 184px);
+    overflow: auto;
+}
+  
+@keyframes background-anim {
+    0% {
+        opacity: 0.3;
+        filter: blur(0) brightness(0);
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(5px) brightness(0.8);
+    }
+}
+
+#info-card {
+    margin-top:20px;
+    background: rgba(139, 134, 146, 0.579);
+    border: none;
+    color: black;
+}
+.card {
+    background: #22222240;
+}
+.container h1 {
+    font-size: 40px;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-put;
+            transition-timing-function: ease-in-put;
+    font-weight: 200;
+  }
+  form .input {
+    margin: 0 auto;
+    text-align: center;
+  }
+  form {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+  }
+  form .in-form {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-text,
+  .form-input {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background: none;
+    border: none;
+    color: #c8d1cf;
+    font-weight: 300;
+    margin: 0;
+    transition: 0.5s;
+    /* -webkit-transition-duration: 1.25s !important;
+            transition-duration: 1.25s !important; */
+  }
+  .form-input {
+      color: white;
+      background: #ffffff20;
+  }
+  form .disabled-input{
+    color: white;
+    background-color: #00000000 !important;
+  }
+  form input{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0 !important;
+    /* border: 1px solid rgba(255, 255, 255, 0.4); */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* width: 65%; */
+    border-radius: 3px;
+    /* padding: 10px 15px; */
+    /* margin: 0 auto 10px auto; */
+    /* display: block; */
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    -webkit-transition-duration: 0.25s !important;
+            transition-duration: 0.25s !important;
+    font-weight: 300;
+    z-index: inherit;
+  }
+  form input:hover,
+  form i:hover {
+    background-color: rgba(255, 255, 255, 0.312);
+  }
+  form input:focus,
+  form div:focus {
+    background-color: white;
+    width: 75% !important;
+    z-index: 999;
+    color: #1c6e4c ;
+  }
+  form button,
+  .tab-btn {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    background-color: #34343456;
+    border: 0;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    color: #53e3a6;
+    border-radius: 3px;
+    text-align: center;
+    width: 90%;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            transition: 0.6s;
+  }
+  form .btn {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px 15px;
+    margin: 0 auto 10px auto;
+    border-radius: 3px;
+    text-align: center;
+    width: 40%;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition: 0.6s;
+  }
+  form .btn:hover {
+    /* background-color: white; */
+    width: 55%;
+    /* color: #53e3a6; */
+  }
+*::-webkit-scrollbar { width: 0 !important }
+* { -ms-overflow-style: none; }
+* { overflow: -moz-scrollbars-none; }
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #909;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #909;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #909;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #909;
+}
+
+.form-input::placeholder {
+  color: #c7c7c9;
+  /* font-size: 1.5em; */
+}
+
+#table-card {
+  background: #aaaaaac0;
+  transition: 0.6s;
+  margin: 10px;
+  width: 96% !important;
+  right: 0;
+}
+
+.inv {
+  opacity: 0;
+}
+.inv-all {
+  height: 0 ;
+  margin: 0 ;
+  padding: 0 ;
+}
+.card-badge {
+  transition: 0.6s;
+  top: -10px !important;
+  width: 30% !important;
+  height: 100% !important;
+  margin-left: 2vh !important;
+}
+
+.card-label {
+  transition: 0.6s;
+  height: 100% !important;
+  padding: 1.5vh !important;
+}
+.card-title-me {
+  transition: 0.6s;
+  padding: 0;
+  color: white;
+  top: 8px !important;
+  margin: auto !important;
+  line-height: 1rem !important;
+  line-break: 1rem !important;
+}
+.card-info span {
+  transition: 0.6s;
+  max-width: 40% !important;
+}
+.card-close {
+  transition: 0.6s;
+  color: white;
+}
+.table {
+  position: relative;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.table-body {
+  margin: 0;
+  padding: 0;
+  color: #ffffffaa;
+  line-height: 1.2rem;
+}
+.table {
+  margin: 0;
+  padding: 0;
+}
+.table .th,
+.table .td {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0.8rem;
+}
+
+span a i {
+  color: beige;
+  transition: 0.6s;
+}
+
+span a i:hover {
+  color: coral;
+  background: #00000000;
+}
+
+div div p .badge {
+  background: #33e2c57a;
+  transition: 0.6s;
+}
+
+div div p .badge:hover {
+  background: #6025acea;
+}
+
+.card-body p a {
+  color: blanchedalmond;
+  transition: 0.4s;
+}
+.card-body p a:hover {
+  color: chocolate;
+}
+
+.card-close .fas {
+  color: wheat;
+  transition: 0.6s;
+}
+
+.card-close .fas:hover {
+  color: crimson;
+  background-color: #00000000;
+}

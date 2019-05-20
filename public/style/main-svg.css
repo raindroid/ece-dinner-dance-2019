@@ -1,0 +1,142 @@
+
+vegas-svg {
+    /* border: solid yellowgreen 1px; */
+    /* max-height: 30%; */
+}
+
+svg {
+    /* border: solid yellowgreen 1px; */
+    margin:0 auto;
+    padding: 0;
+    max-height: 20rem;
+    /* border: 1px solid cadetblue; */
+}
+toronto-svg {
+    /* border: solid yellowgreen 1px; */
+    /* max-height: 30%; */
+    width: 100%;
+}
+svg .toronto-line {
+    /* margin: -100px; */
+    width: 100%;
+    height: 100%;
+    stroke: yellowgreen;
+    fill: none;
+    opacity: 0.9;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 3000;
+    /* stroke-dashoffset: 0; */
+    animation-name: moveToronto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    transition: 600ms;
+    transition-timing-function: ease-in-out;
+    /* animation-timing-function: linear; */
+    filter: url(#glow);
+}
+
+@keyframes moveToronto {
+
+    /* to {
+        stroke-dashoffset: 2800;
+    } */
+    0% {
+        /* stroke-dashoffset: 3000; */
+        stroke: aqua;
+        /* transform: scaleY(.2); */
+        stroke-width: 6px;
+        opacity: 0;
+    }
+
+    100% {
+        /* stroke-dashoffset: 6000; */
+        stroke-width: 1px;
+        opacity: 0.9;
+    }
+}
+
+svg .vegas-line {
+    stroke: yellowgreen;
+    fill: none;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 3000;
+    /* stroke-dashoffset: 0; */
+    animation-name: moveVegas;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    transition: 600ms;
+    transition-timing-function: ease-in-out;
+    /* animation-timing-function: linear; */
+    filter: url(#glow);
+}
+
+.vegas-text {
+    fill: none;
+    stroke: yellowgreen;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-dasharray: 3000;
+    /* stroke-dashoffset: 0; */
+    animation-name: moveVegas;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    transition: 600ms;
+    transition-timing-function: ease-in-out;
+    filter: url(#glow);
+    /* animation-timing-function: linear; */
+}
+svg:hover .vegas-line,
+svg:hover .vegas-text {
+     stroke: coral;
+    
+}
+
+@keyframes moveVegas {
+    
+
+    /* to {
+        strokedashoffset: 2800;
+    } */
+     0% {
+         stroke-dashoffset: 3000;
+        
+        /* transform: scale(0.8); */
+         stroke: aqua;
+    }
+
+     100% {
+         stroke-dashoffset: 6000;
+         stroke: yellowgreen;
+    }
+
+    
+}
+
+.ece-svg {
+    stroke: white;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.bold-ece-svg {
+    stroke-width: 24px; 
+    /* stroke: black; */
+}
+.normal-ece-svg {
+    stroke-width: 10px;
+    /* stroke: black; */
+}
+.thin-ece-svg {
+    stroke-width: 8px;
+    /* stroke: black; */
+}
+.navbar-brand {
+    padding: 0;
+}
