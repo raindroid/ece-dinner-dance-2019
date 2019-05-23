@@ -39,7 +39,7 @@ This is the website of the 2019 University of Toronto Electrical & Computer Engi
 ## Authors
 
 * **Yucan Wu** - *Initial work* - [Raindroid](https://github.com/raindroid)
-* **Xinru Li** - *Initial work* - [ErinLxr](https://github.com/ErinLxr)
+* **Xinru Li** - *Initial work* - [IreneLXR](https://github.com/IreneLXR)
 
 
 ## License
